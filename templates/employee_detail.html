@@ -8,16 +8,16 @@
 
 </head>
 <body>
-    <div class="container mt-3">
+    <div class="container mt-3 ">
     <div class="card max-auto" style="width:300px">
-        <img src="{{employee.photo.url}}" class="card-img-top" alt="">
-            <div class="card-body">
-                <p class="card-text m-0">{{employee.first_name}}{{employee.last_name}}</p>
-                <p class="card-text m-0">{{employee.designation}}</p>
-                <p class="card-text m-0">{{employee.email_address}}</p>
-                <p class="card-text m-0">{{employee.phone_number}}</p>
+        <img src="{{employees.photo.url}}" class="card-img-top" alt="">
+            <div class="card-body ">
+                <p class="card-text m-0">{{employees.first_name}}{{employee.last_name}}</p>
+                <p class="card-text m-0">{{employees.designation}}</p>
+                <p class="card-text m-0">{{employees.email_address}}</p>
+                <p class="card-text m-0">{{employees.phone_number}}</p>
             </div>
-            <a href="{% url 'home' %}" class="btn btn-primary">Back To Home</a>
+            <a href="{% url "home" %}" class="btn btn-primary">Back To Home</a>
         </div>
     </div>
     
