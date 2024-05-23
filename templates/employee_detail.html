@@ -9,13 +9,14 @@
 </head>
 <body>
     <div class="container mt-3 ">
-    <div class="card max-auto" style="width:300px">
-        <img src="{{employees.photo.url}}" class="card-img-top" alt="">
+    <div class="card max-300" style="width:300px">
+        <img src="{{employees.photo.url}}" class="card-img-top" alt="" >
             <div class="card-body ">
-                <p class="card-text m-0">{{employees.first_name}}{{employee.last_name}}</p>
-                <p class="card-text m-0">{{employees.designation}}</p>
-                <p class="card-text m-0">{{employees.email_address}}</p>
-                <p class="card-text m-0">{{employees.phone_number}}</p>
+                <p class="card-text m-0">{{employees.name}}</p>
+                <p class="card-text m-0">{{employees.scientific_name}}</p>
+                <p class="card-text m-0">{{employees.use}}</p>
+                <p class="card-text m-0">{{employees.seasion}}</p>
+                <p class="card-text m-0">{{employees.cost}}</p>
             </div>
             <a href="{% url "home" %}" class="btn btn-primary">Back To Home</a>
         </div>
